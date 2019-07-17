@@ -7,5 +7,6 @@ body {
 @media (orientation: portrait) {
   body {
     flex-direction: column;
+    justify-content: space-around;
   }
 }

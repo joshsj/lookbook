@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-family: Courier, monospace;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
 a {
@@ -35,6 +35,6 @@ a:focus {
 
 @media (max-width: 960px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 }
