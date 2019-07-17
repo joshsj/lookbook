@@ -1,14 +1,80 @@
 {
   "indie": [
     {
+      "page": "https://www.reddit.com/r/streetwear/comments/b0fbnh/wdywt_old_jeans/",
+      "img": "https://i.imgur.com/0LujSIi.jpg",
+      "alt": "Black beanie, burgundy cardigan, mid-bluue vintage jeans, docs"
+    },
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/b0222p/wdywt_carhartt_denim",
+      "img": "https://i.imgur.com/ttAXWF8.jpg",
+      "alt": "Black beanie, white t, beige check shirt, skinny jeans, white converse"
+    },
+    {
+      "page": "https://www.reddit.com/r/malefashion/comments/bg3nut/wiwtwhat_i_call_street_heritage",
+      "img": "https://i.redd.it/lkuooxq97ut21.jpg",
+      "alt": "Black coat, white hoodie, camo pants, Wallabees"
+    },
+    {
+      "page": "https://imgur.com/a/Ufl1fS7",
+      "img": "https://i.imgur.com/W6zgQ7d.jpg",
+      "alt": "Cardigans"
+    },
+    {
+      "page": "https://imgur.com/a/ESsRT",
+      "img": "https://i.imgur.com/u0o0Gqc.jpg",
+      "alt": "Palewave"
+    },
+    {
+      "page": "https://fanpix.famousfix.com/gallery/johnny-marr/p12086372",
+      "img": "http://img2.bdbphotos.com/images/orig/l/1/l11kijakdexdeddj.jpg?kj8as6ye",
+      "alt": "BLack turleneck, grey v-neck jumper, blue jeans, white shoes, moccasins"
+    },
+    {
+      "page": "https://www.reddit.com/r/malefashion/comments/bql6mf/peach_red_bull_best_red_bull",
+      "img": "https://i.redd.it/zktyafpm28z21.jpg",
+      "alt": "Very red cardigan, white Velvet Underground t, skinny jeans, chelsea boots"
+    },
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/bwz85k/wdywt_i_call_this_my_french_skater_look",
+      "img": "https://i.redd.it/z5oqhwn3ah231.jpg",
+      "alt": "Black beret, blue silk shirt, slim black jeans, white socks, yellow Vans"
+    },
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/bzingw/wdywt_entirely_thrifted/",
+      "img": "https://i.redd.it/8bzt4fxkss331.jpg",
+      "alt": "Blue-red-white jacket, white graphic t, blue jeans, red trainers"
+    }
+  ],
+
+  "military": [
+    {
       "page": "https://www.reddit.com/r/streetwear/comments/c23qw3/wdywt_white_girl_final_boss/?st=jy5xb443&sh=ac269f87",
       "img": "https://i.redd.it/bl6qq2q7x4531.jpg",
-      "alt": "Girl with beret"
+      "alt": "Green beret, black graphic crop top, denim shorts, boots"
     },
     {
       "page": "https://www.reddit.com/r/streetwear/comments/bbrkr0/wdywt_metal_gear_not_so_solid/?st=jy5xiyxr&sh=f8dbb381",
       "img": "https://i.redd.it/mzz462gw7ir21.jpg",
-      "alt": "Military-looking boi"
+      "alt": "Full black military"
+    }
+  ],
+
+  "dark": [
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/b0he8a/wdywt_steady_hands_easy_breathe/?st=jtg134o2&sh=a9ecd032",
+      "img": "https://i.redd.it/yvsn7z6h6tl21.jpg",
+      "alt": "Black t, pinstripes, docs"
+    },
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/b011ih/wdywt_rainboots_are_back/?st=jtg13hu3&sh=eb13c2f0",
+      "img": "https://i.imgur.com/Zzb80UO.jpg",
+      "alt": "Black t, cargos, boots"
+    },
+    {
+      "page": "https://www.reddit.com/r/streetwear/comments/ay7u16/wdywt_lovehate_relationship_with_these_pants/?st=jtg15x5h&sh=a20f3de2",
+      "img": "https://i.imgur.com/WjBtNBg.jpg",
+      "alt": "Cardigan, black cargos, docs"
     }
   ]
 }
