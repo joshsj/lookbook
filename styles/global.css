@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  user-select: none;
+  /* border: 1px solid red; */
+}
+
+body {
+  height: 100vh;
+}
+
+h1 {
+  font-family: Courier, monospace;
+  font-size: 3rem;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+.home::before {
+  content: "[";
+}
+.home::after {
+  content: "]";
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
