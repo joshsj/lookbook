@@ -10,6 +10,7 @@ fetch("./sources.json")
       const image = document.createElement("img");
       image.src = e.img; // add attributes
       image.alt = e.alt;
+      image.title = e.alt;
 
       const obj = document.createElement("a");
       obj.href = e.page;
