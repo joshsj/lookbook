@@ -1,4 +1,4 @@
-fetch("./res/sources.json")
+fetch("./sources.json")
   .then(response => response.json()) // get json data
   .then(data => {
     data = data[document.title]; // sources for current page
