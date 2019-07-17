@@ -4,21 +4,17 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 2rem;
 }
 
 main {
-  column-count: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-@media (max-width: 960px) {
-  main {
-    column-count: 1;
-  }
+  max-height: 30rem;
+  margin: 0 0.5rem 1rem;
 }
