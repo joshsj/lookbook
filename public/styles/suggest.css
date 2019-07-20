@@ -1,0 +1,13 @@
+form div {
+  margin-bottom: 1rem;
+}
+
+label::after {
+  content: ":";
+}
+
+button {
+  padding: 0.15rem;
+  background-color: transparent;
+  border: 1px solid black;
+}
