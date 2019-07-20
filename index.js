@@ -22,3 +22,7 @@ app.get("/api", (req, res) => {
     res.json(data); // respond with db data
   });
 });
+
+app.post("/api", (req, res) => {
+  db.insert(req.body);
+});
