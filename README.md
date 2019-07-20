@@ -1,5 +1,5 @@
 # lookbook
 
-Fashion lookbook cos who uses Pinterest
+A small site with a Node.js backend.
 
-My first genuine attempt at a functional website.
+My first go at anything non-static for web delivery.
