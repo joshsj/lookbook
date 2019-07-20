@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Code Regular") local("Fira Code"),
+    url("./fonts/fira-code.woff2") format("woff2"),
+    url("./fonts/fira-code.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+  user-select: none;
+  /* border: 1px solid red; */
+}
+
+body {
+  /* emulate pages */
+  padding: 2rem 0 0 2rem;
+  font-family: "Fira Code", Monaco, Consolas, "Courier New", Courier, monospace;
+  display: flex;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+a:focus {
+  outline-color: black;
+}
+
+.home::before {
+  content: "[";
+}
+.home::after {
+  content: "]";
+}
