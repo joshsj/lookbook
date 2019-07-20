@@ -3,8 +3,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   const res = await fetch(`/api?look=${document.title}`);
   const data = await res.json(); // convert to JSON
 
-  console.log(data);
-
   const container = document.querySelector("main");
 
   data.forEach(e => {
@@ -15,7 +13,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const linkedImg = document.createElement("a");
     linkedImg.innerHTML = image.outerHTML; // add img to link
-    linkedImg.href = e.source;
+    linkedImg.href = e.sourceURL;
 
     container.append(linkedImg);
   });
