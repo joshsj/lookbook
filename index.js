@@ -6,14 +6,16 @@ app.use(express.static("./public")); // local site files
 app.use(express.json()); // treat requests as JSON
 app.listen(3000); // port for requests
 
-const db = new Datastore("./db/submissions.db");
-db.loadDatabase();
+const dbSrc = new Datastore("./db/sources.db");
+dbSrc.loadDatabase();
+const dbSug = new Datastore("./db/suggestions.db");
+dbSug.loadDatabase();
 
 // configure for gets
 // response: all submissions
 app.get("/api", (req, res) => {
   // get entries for requested look
-  db.find(req.query, (err, data) => {
+  dbSrc.find(req.query, (err, data) => {
     if (err) {
       res.end();
       return; // nope outta there
@@ -24,5 +26,5 @@ app.get("/api", (req, res) => {
 });
 
 app.post("/api", (req, res) => {
-  db.insert(req.body);
+  dbSug.insert(req.body); // add suggested
 });
