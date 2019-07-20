@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font: inherit;
   user-select: none;
+  outline-color: black;
   /* border: 1px solid red; */
 }
 
