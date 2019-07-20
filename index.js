@@ -9,19 +9,6 @@ app.listen(3000); // port for requests
 const db = new Datastore("./db/submissions.db");
 db.loadDatabase();
 
-// const d = require("./sources.json");
-
-// Object.keys(d).forEach(key => {
-//   d[key].forEach(e => {
-//     db.insert({
-//       look: key,
-//       imageURL: e.img,
-//       sourceURL: e.page,
-//       desc: e.alt
-//     });
-//   });
-// });
-
 // configure for gets
 // response: all submissions
 app.get("/api", (req, res) => {
