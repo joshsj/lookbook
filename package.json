@@ -1,5 +1,5 @@
 {
-  "name": "inspo",
+  "name": "lookbook",
   "version": "1.0.0",
   "description": "Clothes I like the look of",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/joshsj/inspo.git"
+    "url": "git+https://github.com/joshsj/lookbook.git"
   },
   "author": "joshsj",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/joshsj/inspo/issues"
+    "url": "https://github.com/joshsj/lookbook/issues"
   },
-  "homepage": "https://github.com/joshsj/inspo#readme",
+  "homepage": "https://github.com/joshsj/lookbook#readme",
   "dependencies": {
     "express": "^4.17.1",
     "nedb": "^1.8.0"
