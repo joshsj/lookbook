@@ -7,13 +7,15 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   data.forEach(e => {
     const image = document.createElement("img");
-    image.src = e.imageURL; // add attributes
-    image.alt = e.desc;
-    image.title = e.desc;
+    image.setAttribute("src", e.imageURL); // add attributes
+    image.setAttribute("alt", e.desc);
+    image.setAttribute("title", e.desc);
 
     const linkedImg = document.createElement("a");
-    linkedImg.innerHTML = image.outerHTML; // add img to link
-    linkedImg.href = e.sourceURL;
+    linkedImg.innerHTML = image.outerHTML;
+    linkedImg.setAttribute("href", e.sourceURL);
+
+    console.log(linkedImg);
 
     container.append(linkedImg);
   });
