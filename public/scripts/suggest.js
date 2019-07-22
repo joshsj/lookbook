@@ -1,7 +1,7 @@
-// HTMLCollection/NodeList don't implement Array behaviour,
-// however their structure match Array so you can do this:
+// HTMLCollection doesn't implement Array behaviour,
+// however its structure matches Array so you can do this:
 HTMLCollection.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
-NodeList.prototype[Symbol.iterator] = Array.prototype[Symbol.iterator];
+HTMLCollection.prototype.map = Array.prototype.map;
 
 document.addEventListener("DOMContentLoaded", () => {
   // breakdown addition button
@@ -40,11 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
       headers: {
         "Content-Type": "application/json"
       },
+
       body: JSON.stringify({
         look: document.getElementById("look").value,
         imageURL: document.getElementById("image-url").value,
         sourceURL: document.getElementById("source-url").value,
-        desc: document.getElementById("desc").value
+        desc: document.getElementById("breakdown").children.map(e => e.value)
       })
     };
 

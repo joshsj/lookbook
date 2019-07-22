@@ -26,5 +26,6 @@ app.get("/api", (req, res) => {
 });
 
 app.post("/api", (req, res) => {
+  req.body.desc = req.body.desc.filter(e => e.value !== ""); // remove empty values
   dbSug.insert(req.body); // add suggested
 });
