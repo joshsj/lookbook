@@ -5,16 +5,27 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const container = document.querySelector("main");
 
-  data.forEach(e => {
+  data.forEach(fit => {
     const image = document.createElement("img");
-    image.setAttribute("src", e.imageURL); // add attributes
-    image.setAttribute("alt", e.desc);
-    image.setAttribute("title", e.desc);
+    image.setAttribute("src", fit.imageURL); // add attributes
 
     const linkedImg = document.createElement("a");
     linkedImg.append(image);
-    linkedImg.setAttribute("href", e.sourceURL);
+    linkedImg.setAttribute("href", fit.sourceURL);
 
-    container.append(linkedImg);
+    const breakdown = document.createElement("ul");
+    fit.breakdown.forEach(line => {
+      // add as paragraphs
+      const p = document.createElement("li");
+      p.textContent = line;
+      breakdown.append(p);
+    });
+    console.log(breakdown);
+
+    const look = document.createElement("div");
+    look.append(linkedImg);
+    look.append(breakdown);
+
+    container.append(look);
   });
 });
