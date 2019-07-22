@@ -17,39 +17,38 @@
       <h2><a href="./index.html" class="home">home</a></h2>
     </nav>
     <main>
-      <form action="" autocomplete="off">
-        <div>
+      <form autocomplete="off">
+        <div class="form-row">
           <label for="look">Look</label>
-          <select name="look" id="look" required>
+          <select id="look" required>
             <option value="indie">indie</option>
             <option value="military">military</option>
             <option value="dark">dark</option>
           </select>
         </div>
-        <div>
+
+        <div class="form-row">
           <label for="image-url">Image</label>
-          <input
-            type="url"
-            name="image-url"
-            id="image-url"
-            size="26"
-            required
-          />
+          <input type="url" id="image-url" required />
         </div>
-        <div>
+
+        <div class="form-row">
           <label for="source-url">Source</label>
-          <input
-            type="url"
-            name="source-url"
-            id="source-url"
-            size="25"
-            required
-          />
+          <input type="url" id="source-url" required />
         </div>
-        <div>
-          <label for="desc">Description</label>
-          <input type="text" name="desc" id="desc" required />
+
+        <div id="breakdown-header" class="form-row">
+          <label>Breakdown</label>
+          <div>
+            <button id="breakdown-add" type="button">+</button>
+            <button id="breakdown-remove" type="button">-</button>
+          </div>
         </div>
+
+        <div id="breakdown">
+          <input type="text" class="form-row" required />
+        </div>
+
         <button type="submit">Submit</button>
       </form>
     </main>

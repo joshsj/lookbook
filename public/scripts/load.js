@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     linkedImg.innerHTML = image.outerHTML;
     linkedImg.setAttribute("href", e.sourceURL);
 
-    console.log(linkedImg);
-
     container.append(linkedImg);
   });
 });

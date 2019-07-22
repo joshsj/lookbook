@@ -55,3 +55,9 @@ a:focus {
 .home::after {
   content: "]";
 }
+
+button {
+  padding: 0 0.3rem;
+  background-color: transparent;
+  border: 0.05rem solid black;
+}
