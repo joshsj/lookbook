@@ -45,7 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
         look: document.getElementById("look").value,
         imageURL: document.getElementById("image-url").value,
         sourceURL: document.getElementById("source-url").value,
-        desc: document.getElementById("breakdown").children.map(e => e.value)
+        breakdown: document
+          .getElementById("breakdown")
+          .children.map(e => e.value)
       })
     };
 
