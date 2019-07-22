@@ -51,6 +51,10 @@ a:focus {
   outline-color: black;
 }
 
+li {
+  list-style-position: inside;
+}
+
 .home::before {
   content: "[";
 }
