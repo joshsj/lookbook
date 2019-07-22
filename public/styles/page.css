@@ -4,6 +4,7 @@ nav {
 
 main > div {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 img {
