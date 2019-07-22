@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     image.setAttribute("title", e.desc);
 
     const linkedImg = document.createElement("a");
-    linkedImg.innerHTML = image.outerHTML;
+    linkedImg.append(image);
     linkedImg.setAttribute("href", e.sourceURL);
 
     container.append(linkedImg);
