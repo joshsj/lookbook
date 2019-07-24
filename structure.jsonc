@@ -1,0 +1,29 @@
+{
+  // each object is own db
+  "fits": [
+    {
+      "creator": "username of creater",
+      "imageURL": "https://i.imgur.com/Zzb80UO.jpg",
+      "sourceURL": "https://www.reddit.com/r/streetwear/comments/b011ih/wdywt_rainboots_are_back/?st=jtg13hu3&sh=eb13c2f0",
+      "breakdown": ["Black t", " cargos", " boots"]
+    }
+  ],
+  "users": [
+    {
+      "username": "guess",
+      "insta": "instagra username",
+      "about": "some shit about who they are",
+      "looks": [
+        {
+          "look": "look name",
+          "fits": [
+            // IDs of fits for look
+            1,
+            7,
+            120
+          ]
+        }
+      ]
+    }
+  ]
+}
