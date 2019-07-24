@@ -10,7 +10,7 @@
   ],
   "users": [
     {
-      "username": "guess",
+      "_id": "username", // primary key used by nedb
       "insta": "instagra username",
       "about": "some shit about who they are",
       "looks": [
