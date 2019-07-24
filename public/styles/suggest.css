@@ -11,17 +11,12 @@ form input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1rem;
 }
 
 /* first child in row */
 .form-row > :first-child {
   /* space input box away */
   margin-right: 1rem;
-}
-
-.form-row:last-child {
-  margin-bottom: 0;
 }
 
 #breakdown {

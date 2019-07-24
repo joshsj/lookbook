@@ -67,3 +67,10 @@ button {
   background-color: transparent;
   border: 0.05rem solid black;
 }
+
+.space {
+  margin-bottom: 1rem;
+}
+.space:last-child {
+  margin-bottom: 0;
+}

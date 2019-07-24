@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const row = document.createElement("input"); // row to add
     row.setAttribute("type", "text");
     row.setAttribute("class", "form-row");
+    row.setAttribute("class", "space");
 
     document.getElementById("breakdown").append(row);
   });
