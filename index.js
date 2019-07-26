@@ -28,3 +28,35 @@ app.get("/api/user", (req, res) => {
     }
   });
 });
+
+// request for user's looks
+// query: username
+// response: looks data
+app.get("/api/looks", (req, res) => {
+  // find user, only get looks
+  dbUsers.findOne(
+    { _id: req.query.username }, // requested username
+    { _id: 0, looks: 1 }, // only get looks field
+    (err, data) => {
+      if (data) {
+        res.json(data);
+      } else {
+        res.status(404).end(); // send 404, user not found
+      }
+    }
+  );
+});
+
+// request for fit
+// query: fit ID
+// response: fit data
+app.get("/api/fit", (req, res) => {
+  // convert ID to nedb syntax
+  dbFits.find({ _id: req.query.id }, (err, data) => {
+    if (data) {
+      res.json(data);
+    } else {
+      res.status(404).end(); // send 404, fit not found
+    }
+  });
+});
