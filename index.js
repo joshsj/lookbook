@@ -12,7 +12,7 @@ const dbSug = new Datastore("./db/suggestions.db");
 dbSug.loadDatabase();
 
 // configure for gets
-// response: all submissions
+// response: all fits for requested look
 app.get("/api", (req, res) => {
   // get entries for requested look
   dbSrc.find(req.query, (err, data) => {
