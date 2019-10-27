@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>lookbook</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>lookbook</title>
-    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
   </head>
 
-  <body>
-    <nav>
-      <h1><a href="./indie.html">Indie</a></h1>
-      <h1><a href="./military.html">Military</a></h1>
-      <h1><a href="./dark.html">Dark</a></h1>
-      <h2><a href="./suggest.html">got a suggestion?</a></h2>
-    </nav>
+  <body class="page">
+    <h1>lookbook</h1>
+
+    <form action="/user" method="GET">
+      <input
+        name="username"
+        type="text"
+        placeholder="username"
+        size="10"
+        required
+      />
+    </form>
   </body>
 </html>

@@ -1,31 +1,36 @@
 const express = require("express");
-const Datastore = require("nedb");
+const datastore = require("nedb-promises"); // nedb with native promise wrapper
+
+// load databases
+const dbUsers = datastore.create("./db/users.db");
+const dbLooks = datastore.create("./db/looks.db");
+const dbFits = datastore.create("./db/fits.db");
 
 const app = express();
-app.use(express.static("./public")); // local site files
-app.use(express.json()); // treat requests as JSON
-app.listen(3000); // port for requests
+app.listen(3000); // port
 
-const dbSrc = new Datastore("./db/sources.db");
-dbSrc.loadDatabase();
-const dbSug = new Datastore("./db/suggestions.db");
-dbSug.loadDatabase();
+// parse POST body as url encoded
+// http://expressjs.com/en/api.html#express.urlencoded
+app.use(express.urlencoded({ extended: false }));
 
-// configure for gets
-// response: all fits for requested look
-app.get("/api", (req, res) => {
-  // get entries for requested look
-  dbSrc.find(req.query, (err, data) => {
-    if (err) {
-      res.end();
-      return; // nope outta there
-    }
+// host public files
+app.use(express.static("./public"));
 
-    res.json(data); // respond with db data
-  });
-});
+// user search
+app.get("/user", async (req, res) => {
+  if (!req.query.username) {
+    // no username, go home
+    res.redirect("/");
+  }
 
-app.post("/api", (req, res) => {
-  req.body.breakdown = req.body.breakdown.filter(e => e.value !== ""); // remove empty values
-  dbSug.insert(req.body); // add suggested
+  // check user exists
+  const exists = !!(await dbUsers.count({ username: req.query.username }));
+
+  if (!exists) {
+    // no such user, go home with alert
+    res.redirect("/?not-found=");
+  }
+
+  // user exists, proceed to page
+  res.redirect("/user.html");
 });

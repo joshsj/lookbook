@@ -1,76 +1,64 @@
-@font-face {
-  font-family: "Fira Code";
-  font-style: normal;
-  font-weight: 400;
-  src: local("Fira Code Regular") local("Fira Code"),
-    url("./fonts/fira-code.woff2") format("woff2"),
-    url("./fonts/fira-code.woff") format("woff");
-}
-
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font: inherit;
-  user-select: none;
-  outline-color: black;
+  outline-color: var(--cpop);
   /* border: 1px solid red; */
 }
 
+::selection {
+  color: var(--cfront);
+  background-color: var(--cpop);
+}
+
 body {
-  /* emulate pages */
-  padding: 2rem 0 0 2rem;
-  font-family: "Fira Code", Monaco, Consolas, "Courier New", Courier, monospace;
-  display: flex;
+  --cfront: #333333;
+  --cback: #f9f9f9;
+  --cpop: #1e88e5;
+
+  color: var(--cfront);
+  background-color: var(--cback);
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.25rem;
+  padding: 2rem 0 0 2rem; /* all but bottom padding */
 }
 
 h1 {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
-}
-
-h2 {
-  font-size: 2.2rem;
-}
-
-p,
-li,
-label,
-input,
-button {
-  font-size: 1.3rem;
+  font-size: 2.7rem;
+  font-weight: normal;
+  line-height: 1;
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--cpop);
+  margin-bottom: 1rem;
 }
 
 a {
-  color: currentColor;
+  color: var(--cpop);
   text-decoration: none;
-  text-transform: lowercase;
-}
-
-a:focus {
-  outline-color: black;
 }
 
 li {
   list-style-position: inside;
 }
 
-.home::before {
-  content: "[";
-}
-.home::after {
-  content: "]";
-}
-
-button {
-  padding: 0 0.3rem;
+input {
+  font: inherit;
+  color: inherit;
   background-color: transparent;
-  border: 0.05rem solid black;
+  border: 0.05rem solid var(--cfront);
 }
 
-.space {
-  margin-bottom: 1rem;
+.page {
+  min-height: 100vh;
 }
-.space:last-child {
-  margin-bottom: 0;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --cfront: #f9f9f9;
+    --cback: #333333;
+  }
 }
