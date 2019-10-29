@@ -12,6 +12,7 @@ All tables in [nebd](https://github.com/louischatriot/nedb#the-javascript-databa
 - title: `String`
 - owner: `_id` from `users` table
 - fits: `_id[]` from `fits` table
+- desc: `String` a little info about it
 
 ## Fits
 
