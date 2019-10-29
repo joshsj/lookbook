@@ -11,3 +11,9 @@ input {
   text-align: center;
   border: none;
 }
+
+h1 {
+  padding-bottom: 1rem;
+  border-bottom: 0.2rem solid var(--cpop);
+  margin-bottom: 1rem;
+}

@@ -9,7 +9,7 @@
 }
 
 ::selection {
-  color: var(--cfront);
+  color: var(--cback);
   background-color: var(--cpop);
 }
 
@@ -24,16 +24,21 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.25rem;
-  padding: 2rem 0 0 2rem; /* all but bottom padding */
+  line-height: 1.35;
 }
 
 h1 {
   font-size: 2.7rem;
   font-weight: normal;
   line-height: 1;
-  padding-bottom: 1rem;
-  border-bottom: 0.2rem solid var(--cpop);
+}
+
+p {
   margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
