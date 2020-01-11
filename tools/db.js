@@ -8,10 +8,6 @@ const dbFits = datastore.create("./db/fits.db");
 
 (async () => {
   const ME = "SQtW2iv7iCAHW5hM";
-  for (let i = 0; i < 100000; ++i) {
-    const hmm = await dbLooks.count({});
-    console.log(hmm);
-  }
 
   // modifying adds records, opening merges records with same ID
   // this forces the merge
