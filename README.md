@@ -1,5 +1,9 @@
 # lookbook
 
-A small site with a Node.js backend.
+Small Node.js project, basically copying Pinterest.
 
-My first go at anything non-static for web delivery.
+## Packages
+
+* [express](https://www.npmjs.com/package/express) for the web server
+* [nedb](https://www.npmjs.com/package/nedb) for database management 
+* [nedb-promises](https://www.npmjs.com/package/nedb-promises) for native promise support for NeDB
