@@ -1,23 +1,40 @@
 const express = require("express");
 const datastore = require("nedb-promises"); // nedb with native promise wrapper
+const hbs = require("express-handlebars");
 
 // load databases
+
 const dbUsers = datastore.create("./db/users.db");
 const dbLooks = datastore.create("./db/looks.db");
 const dbFits = datastore.create("./db/fits.db");
 
+// configure express
+
 const app = express();
-app.listen(80);
 
-// parse POST body as url encoded
-// http://expressjs.com/en/api.html#express.urlencoded
-app.use(express.urlencoded({ extended: false }));
+// register handlebars as template engine
+app.engine(
+  "hbs", // engine name
+  hbs({
+    extname: ".hbs" // main aint typing .handlebars
+  })
+);
+app.set(
+  "view engine",
+  "hbs" // engine name, also file extension
+);
 
-// host files
+// host styles, scripts, etc.
 app.use(express.static("./public"));
 
-// 404 handler
-app.get("/404", (req, res) => res.status(404).redirect("/404.html"));
-
 // configure routes
+app.get("/", (req, res) => res.render("index"));
+
 app.use("/user", require("./routes/user.js")(dbUsers));
+
+// route handlers are ordered in configuration order
+// use 404 as fallback
+app.use((req, res) => res.status(404).render("404"));
+
+// GO!
+app.listen(80);

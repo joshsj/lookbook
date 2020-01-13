@@ -13,10 +13,10 @@ routes.get("/:username", async (req, res) => {
 
   // check found
   if (user === null) {
-    res.redirect("/404");
+    res.status(404).send(404);
   }
 
-  res.redirect("/user.html");
+  res.render("user");
 });
 
 // export routes
