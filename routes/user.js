@@ -2,6 +2,8 @@
 
 const routes = require("express").Router();
 
+let dbUsers;
+
 routes.get("/", async (req, res) => {
   // route with parameter
   res.redirect(`/user/${req.query.username}`);
@@ -13,14 +15,15 @@ routes.get("/:username", async (req, res) => {
 
   // check found
   if (user === null) {
-    res.status(404).send(404);
+    res.status(404).render("404");
+    return;
   }
 
   res.render("user");
 });
 
 // export routes
-module.exports = function(dbUsers) {
-  this.dbUsers = dbUsers;
+module.exports = _dbUsers => {
+  dbUsers = _dbUsers;
   return routes;
 };
