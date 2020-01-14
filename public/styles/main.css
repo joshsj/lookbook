@@ -36,10 +36,6 @@ h1 {
   font-size: 2.7rem;
   font-weight: normal;
   line-height: 1;
-  /* underline thing */
-  padding-bottom: 1rem;
-  border-bottom: 0.2rem solid var(--cpop);
-  margin-bottom: 1rem;
 }
 
 p {
@@ -68,6 +64,13 @@ input {
 
 .page {
   min-height: 100vh;
+}
+
+/* underline thing */
+.title {
+  padding-bottom: 0.25em;
+  border-bottom: 0.1em solid var(--cpop);
+  margin-bottom: 0.25em;
 }
 
 @media (prefers-color-scheme: dark) {
