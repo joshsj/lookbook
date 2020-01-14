@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Fira Code";
-  src: url("./fonts/fira-code-regular.woff2") format("woff2"),
-    url("./fonts/fira-code-regular.woff") format("woff");
+  src: url("./fira-code-regular.woff2") format("woff2"),
+    url("./fira-code-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Lato";
-  src: url("./fonts/lato-regular.woff2") format("woff2"),
-    url("./fonts/lato-regular.woff") format("woff");
+  src: url("./lato-regular.woff2") format("woff2"),
+    url("./lato-regular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
   text-rendering: optimizeLegibility;
