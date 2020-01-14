@@ -28,6 +28,8 @@ body {
     "Segoe UI Symbol";
   font-size: 1.25rem;
   line-height: 1.35;
+
+  margin: 2%;
 }
 
 h1 {
@@ -37,6 +39,7 @@ h1 {
   /* underline thing */
   padding-bottom: 1rem;
   border-bottom: 0.2rem solid var(--cpop);
+  margin-bottom: 1rem;
 }
 
 p {

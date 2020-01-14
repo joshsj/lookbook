@@ -1,12 +1,14 @@
 <body>
-  <a href="{{src}}" target="_blank" rel="noopener noreferrer">
-    <img src="{{img}}" alt="{{title}}">
-  </a>
-  <h1>Breakdown</h1>
-  <ul>
-    {{#breakdown}}
-    <li>{{this}}</li>
-    {{/breakdown}}
-  </ul>
-  <p>By <a href="/user/{{owner}}">{{owner}}</a></p>
+  <img src="{{img}}" alt="{{title}}">
+
+  <section>
+    <h1>Breakdown</h1>
+    <ul>
+      {{#breakdown}}
+      <li>{{this}}</li>
+      {{/breakdown}}
+    </ul>
+    <p>Found <a href="{{src}}" target="_blank" rel="noopener noreferrer">here</a>, by <a
+        href="/user/{{owner}}">{{owner}}</a></p>
+  </section>
 </body>

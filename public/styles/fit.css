@@ -1,0 +1,19 @@
+body {
+  display: flex;
+}
+
+section {
+  margin-left: 2.5rem;
+}
+
+ul {
+  margin-bottom: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 45%;
+}
