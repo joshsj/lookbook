@@ -1,4 +1,36 @@
 <body>
-  <h1>Nowt here yet</h1>
-  <a href="/">Home</a>
+  <div id="profile">
+    <h1 class="title">{{username}}</h1>
+    <p><b>John Smith</b></p>
+    <p><b>Sheffield</b></p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+
+  <main>
+    {{#if looks}}
+    <h1 class="title">looks</h1>
+    <section id="looks">
+      {{#each looks}}
+      <h2><a href="/look/{{this._id}}">{{this.title}}</a></h2>
+      <p>{{this.desc}}</p>
+      {{/each }}
+    </section>
+    {{/if}}
+
+    {{#if fits}}
+    <h1 class="title">fits</h1>
+    <section id="fits">
+      {{#each fits}}
+      <a href="/fit/{{this._id}}">
+        <img src="{{this.img}}" alt="fit">
+      </a>
+      {{/each }}
+    </section>
+    {{/if}}
+  </main>
 </body>

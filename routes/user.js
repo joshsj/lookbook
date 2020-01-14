@@ -4,7 +4,7 @@
 
 const routes = require("express").Router();
 
-let dbUsers;
+let dbUsers, dbLooks, dbFits;
 
 routes.get("/", async (req, res) => {
   // route with parameter
@@ -21,11 +21,17 @@ routes.get("/:username", async (req, res) => {
     return;
   }
 
-  res.render("user");
+  // get fits, looks
+  user.looks = await dbLooks.find({ owner: user._id }, { title: 1, desc: 1 });
+  user.fits = await dbFits.find({ owner: user._id }, { img: 1 });
+
+  res.render("user", user);
 });
 
 // export routes
-module.exports = _dbUsers => {
+module.exports = (_dbUsers, _dbLooks, _dbFits) => {
   dbUsers = _dbUsers;
+  dbLooks = _dbLooks;
+  dbFits = _dbFits;
   return routes;
 };

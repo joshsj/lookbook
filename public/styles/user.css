@@ -1,0 +1,27 @@
+body {
+  display: flex;
+}
+
+#profile {
+  width: 25%;
+  margin-right: 3rem;
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+article {
+  margin-bottom: 1rem;
+}
+
+img {
+  max-width: 22%;
+  transform: scale(0.95);
+  transition: transform ease 0.1s;
+  overflow: visible;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
