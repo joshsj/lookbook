@@ -31,6 +31,7 @@ app.use(express.static("./public"));
 app.get("/", (req, res) => res.render("index"));
 
 app.use("/user", require("./routes/user.js")(dbUsers));
+app.use("/fit", require("./routes/fit.js")(dbUsers, dbFits));
 
 // route handlers are ordered in configuration order
 // use 404 as fallback
