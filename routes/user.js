@@ -1,3 +1,5 @@
+"use strict";
+
 // /user
 
 const routes = require("express").Router();

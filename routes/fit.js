@@ -1,3 +1,5 @@
+"use strict";
+
 // /fit
 
 const routes = require("express").Router();

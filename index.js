@@ -1,3 +1,5 @@
+"use strict";
+
 const express = require("express");
 const datastore = require("nedb-promises"); // nedb with native promise wrapper
 const hbs = require("express-handlebars");
