@@ -6,11 +6,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
   <link rel="stylesheet" href="/styles/main.css" />
+  <link rel="stylesheet" href="/styles/partials/header.css">
+
   {{!-- @exphbs.view = name of the body view --}}
   <link rel="stylesheet" href="/styles/{{@exphbs.view}}.css" />
 </head>
 
-{{{body}}}
+<body>
+  {{{body}}}
+</body>
 
 </html>

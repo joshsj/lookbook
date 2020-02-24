@@ -1,4 +1,4 @@
-body {
+main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -6,6 +6,7 @@ body {
 }
 
 input {
+  font-size: 1.7em;
   text-align: center;
   outline: none;
   border: none;

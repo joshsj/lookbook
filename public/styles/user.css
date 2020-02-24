@@ -17,11 +17,4 @@ article {
 
 img {
   max-width: 22%;
-  transform: scale(0.95);
-  transition: transform ease 0.1s;
-  overflow: visible;
-}
-
-img:hover {
-  transform: scale(1.2);
 }
